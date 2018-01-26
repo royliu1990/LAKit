@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (4.6.0)
+  - DynamicBlurView (2.0.2)
+  - ESPullToRefresh (2.7)
+  - IQKeyboardManagerSwift (5.0.7)
+  - Kingfisher (4.6.1)
+  - Moya (10.0.1):
+    - Moya/Core (= 10.0.1)
+  - Moya/Core (10.0.1):
+    - Alamofire (~> 4.1)
+    - Result (~> 3.0)
+  - PopupDialog (0.7.0):
+    - DynamicBlurView (~> 2.0)
+  - Result (3.2.4)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - SnapKit (4.0.0)
+  - SwiftDate (4.5.1)
+  - SwiftyJSON (4.0.0)
+  - Then (2.3.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.6.0)
+  - ESPullToRefresh
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - Moya
+  - PopupDialog (~> 0.6)
+  - RxCocoa (~> 4.0.0)
+  - RxSwift (~> 4.0.0)
+  - SnapKit (~> 4.0.0)
+  - SwiftDate (~> 4.5.1)
+  - SwiftyJSON
+  - Then
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  ESPullToRefresh: 119e2710b82b75536aab2bbe4883ba119fca35c8
+  IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
+  Kingfisher: 1f9157d9c02b380cbd0b7cc890161195164eb634
+  Moya: 9e621707ff754eeb51ff3ec51a3d54e517c0733a
+  PopupDialog: 4abc6db5b22b7c8029e2162bde8891ee6aa4b6c8
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftDate: 7b56d42a221f582047287deb256b23fc5ed49a60
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  Then: ee21c97b85ff6062b9b0080c9abb1eea46743345
+
+PODFILE CHECKSUM: ff944295971fb36824e8619d8c5d5f24877b5524
+
+COCOAPODS: 1.2.1
