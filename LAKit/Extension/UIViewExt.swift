@@ -5,9 +5,9 @@
 
 import UIKit
 
-extension UIView
+public extension UIView
 {
-    var x: CGFloat {
+   public  var x: CGFloat {
 
         get {
 
@@ -23,7 +23,7 @@ extension UIView
     }
 
     // y
-    var y: CGFloat {
+  public  var y: CGFloat {
 
         get {
 
@@ -39,7 +39,7 @@ extension UIView
     }
 
     // height
-    var height: CGFloat {
+  public   var height: CGFloat {
 
         get {
 
@@ -55,7 +55,7 @@ extension UIView
     }
 
     // width
-    var width: CGFloat {
+  public  var width: CGFloat {
 
         get {
 
@@ -71,7 +71,7 @@ extension UIView
     }
 
     // left
-    var left: CGFloat {
+   public var left: CGFloat {
 
         get {
 
@@ -85,7 +85,7 @@ extension UIView
     }
 
     // right
-    var right: CGFloat {
+  public  var right: CGFloat {
 
         get {
 
@@ -99,7 +99,7 @@ extension UIView
     }
 
     // top
-    var top: CGFloat {
+   public var top: CGFloat {
 
         get {
 
@@ -113,7 +113,7 @@ extension UIView
     }
 
     // bottom
-    var bottom: CGFloat {
+  public  var bottom: CGFloat {
 
         get {
 
@@ -126,7 +126,7 @@ extension UIView
         }
     }
 
-    var centerX: CGFloat {
+  public  var centerX: CGFloat {
 
         get {
 
@@ -139,7 +139,7 @@ extension UIView
         }
     }
 
-    var centerY: CGFloat {
+  public  var centerY: CGFloat {
 
         get {
 
@@ -152,7 +152,7 @@ extension UIView
         }
     }
 
-    var middleX: CGFloat {
+   public var middleX: CGFloat {
 
         get {
 
@@ -160,7 +160,7 @@ extension UIView
         }
     }
 
-    var middleY: CGFloat {
+   public var middleY: CGFloat {
 
         get {
 
@@ -168,7 +168,7 @@ extension UIView
         }
     }
 
-    var middlePoint: CGPoint {
+   public var middlePoint: CGPoint {
 
         get {
 
@@ -176,7 +176,7 @@ extension UIView
         }
     }
 
-    var frameTuple:(Int,Int,Int,Int){
+  public  var frameTuple:(Int,Int,Int,Int){
         set{
             frame = CGRect(newValue)
         }
@@ -185,7 +185,7 @@ extension UIView
         }
     }
 
-    var sizeTuple:(Int,Int){
+   public var sizeTuple:(Int,Int){
         set{
             frame.size = CGSize(newValue)
         }

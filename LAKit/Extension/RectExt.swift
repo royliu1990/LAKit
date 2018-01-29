@@ -5,7 +5,7 @@
 
 import UIKit
 
-extension CGRect
+public extension CGRect
 {
     init(_ rect:(Int,Int,Int,Int))
     {
@@ -22,17 +22,17 @@ extension CGRect
         self.init(origin: rect.0, size: rect.1)
     }
 
-    func asUIView() -> UIView
+ public   func asUIView() -> UIView
     {
         return UIView(frame: self)
     }
 
-    func asUILabel() -> UILabel
+ public   func asUILabel() -> UILabel
     {
         return UILabel(frame: self)
     }
 
-    func asUIButton() -> UIButton
+ public   func asUIButton() -> UIButton
     {
         return UIButton(frame: self)
     }
@@ -40,7 +40,7 @@ extension CGRect
 
 }
 
-extension CGSize
+public extension CGSize
 {
     init(_ size:(Int,Int))
     {
@@ -54,7 +54,7 @@ extension CGSize
 
 }
 
-extension CGPoint
+public extension CGPoint
 {
     init(_ point:(Int,Int))
     {
@@ -66,7 +66,7 @@ extension CGPoint
         self.init(x: point[0], y: point[1])
     }
 
-    func makeDisc(_ radius:Int) -> UIView
+ public   func makeDisc(_ radius:Int) -> UIView
     {
         let disc = UIView()
 

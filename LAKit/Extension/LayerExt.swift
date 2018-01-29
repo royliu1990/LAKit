@@ -5,10 +5,10 @@
 
 import UIKit
 
-extension QuartzCore.CAShapeLayer {
+public extension QuartzCore.CAShapeLayer {
 
     // x
-    var x: CGFloat {
+ public   var x: CGFloat {
 
         get {
 
@@ -24,7 +24,7 @@ extension QuartzCore.CAShapeLayer {
     }
 
     // y
-    var y: CGFloat {
+ public   var y: CGFloat {
 
         get {
 
@@ -40,7 +40,7 @@ extension QuartzCore.CAShapeLayer {
     }
 
     // height
-    var height: CGFloat {
+ public   var height: CGFloat {
 
         get {
 
@@ -56,7 +56,7 @@ extension QuartzCore.CAShapeLayer {
     }
 
     // width
-    var width: CGFloat {
+ public   var width: CGFloat {
 
         get {
 
@@ -72,7 +72,7 @@ extension QuartzCore.CAShapeLayer {
     }
 
     // left
-    var left: CGFloat {
+ public   var left: CGFloat {
 
         get {
 
@@ -86,7 +86,7 @@ extension QuartzCore.CAShapeLayer {
     }
 
     // right
-    var right: CGFloat {
+ public   var right: CGFloat {
 
         get {
 
@@ -100,7 +100,7 @@ extension QuartzCore.CAShapeLayer {
     }
 
     // top
-    var top: CGFloat {
+ public   var top: CGFloat {
 
         get {
 
@@ -114,7 +114,7 @@ extension QuartzCore.CAShapeLayer {
     }
 
     // bottom
-    var bottom: CGFloat {
+ public   var bottom: CGFloat {
 
         get {
 
@@ -128,7 +128,7 @@ extension QuartzCore.CAShapeLayer {
     }
 
 
-    var middleX: CGFloat {
+ public   var middleX: CGFloat {
 
         get {
 
@@ -136,7 +136,7 @@ extension QuartzCore.CAShapeLayer {
         }
     }
 
-    var middleY: CGFloat {
+ public   var middleY: CGFloat {
 
         get {
 
@@ -144,7 +144,7 @@ extension QuartzCore.CAShapeLayer {
         }
     }
 
-    var middlePoint: CGPoint {
+ public   var middlePoint: CGPoint {
 
         get {
 

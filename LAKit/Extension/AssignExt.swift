@@ -12,15 +12,15 @@ import UIKit
 
 let adjCofY:CGFloat = 1
 
-protocol EasyAssign {
-    func easyAssign(superView _superView: UIView?, backgroundColor _backgroundColor: UIColor) -> Self
+public protocol EasyAssign {
+ func easyAssign(superView _superView: UIView?, backgroundColor _backgroundColor: UIColor) -> Self
 }
 
 
-extension UIView {
+public extension UIView {
 
     @discardableResult
-    func easyAssign(superView _superView: UIView? = nil, backgroundColor _backgroundColor: UIColor = .white) -> Self {
+ public   func easyAssign(superView _superView: UIView? = nil, backgroundColor _backgroundColor: UIColor = .white) -> Self {
 
         _superView?.addSubview(self)
 
@@ -30,14 +30,14 @@ extension UIView {
     }
 
 
-    func showBorder(_ color: UIColor = UIColor.red) {
+ public   func showBorder(_ color: UIColor = UIColor.red) {
         self.layer.borderColor = color.cgColor
 
         self.layer.borderWidth = 1.0
     }
 
 
-    func showDebugBorder(_ color: UIColor = UIColor.red) {
+ public   func showDebugBorder(_ color: UIColor = UIColor.red) {
 //        if !layoutDebug {
 //            return
 //        }
@@ -53,7 +53,7 @@ extension UIView {
 extension UILabel {
 
     @discardableResult
-    func easyAssign(text _text: String? = nil, textAlignment _textAlignment: NSTextAlignment = NSTextAlignment.center, fontSize _fontSize: CGFloat = 16, textColor _textColor: UIColor = .black) -> UILabel {
+ public   func easyAssign(text _text: String? = nil, textAlignment _textAlignment: NSTextAlignment = NSTextAlignment.center, fontSize _fontSize: CGFloat = 16, textColor _textColor: UIColor = .black) -> UILabel {
 
 
         if (_text != nil) {
@@ -77,7 +77,7 @@ extension UILabel {
 extension UITextField {
 
     @discardableResult
-    func easyAssign(text _text: String? = nil, placeholder _placeholder: String = "", textAlignment _textAlignment: NSTextAlignment = NSTextAlignment.center, fontSize _fontSize: CGFloat = 16, textColor _textColor: UIColor = .black) -> UITextField {
+ public   func easyAssign(text _text: String? = nil, placeholder _placeholder: String = "", textAlignment _textAlignment: NSTextAlignment = NSTextAlignment.center, fontSize _fontSize: CGFloat = 16, textColor _textColor: UIColor = .black) -> UITextField {
 
 
         if (_text != nil) {
@@ -102,7 +102,7 @@ extension UITextField {
 extension UITextView {
 
     @discardableResult
-    func easyAssign(text _text: String? = nil, placeholder _placeholder: String = "", textAlignment _textAlignment: NSTextAlignment = NSTextAlignment.center, fontSize _fontSize: CGFloat = 16, textColor _textColor: UIColor = .black) -> UITextView {
+ public   func easyAssign(text _text: String? = nil, placeholder _placeholder: String = "", textAlignment _textAlignment: NSTextAlignment = NSTextAlignment.center, fontSize _fontSize: CGFloat = 16, textColor _textColor: UIColor = .black) -> UITextView {
 
 
         if (_text != nil) {
@@ -125,9 +125,9 @@ extension UITextView {
 }
 
 
-extension UIButton {
+public extension UIButton {
     @discardableResult
-    func easyAssign(title _title: String? = nil, image _image: UIImage? = nil, backgroundImage _backgroundImage: UIImage? = nil, fontSize _fontSize: CGFloat = 17, textAlignment _textAlignment: NSTextAlignment = NSTextAlignment.center, color _color: UIColor? = nil, state: UIControlState = UIControlState.normal) -> UIButton {
+ public   func easyAssign(title _title: String? = nil, image _image: UIImage? = nil, backgroundImage _backgroundImage: UIImage? = nil, fontSize _fontSize: CGFloat = 17, textAlignment _textAlignment: NSTextAlignment = NSTextAlignment.center, color _color: UIColor? = nil, state: UIControlState = UIControlState.normal) -> UIButton {
 
 
         if (_title != nil) {

@@ -5,21 +5,21 @@
 
 import UIKit
 
-extension Int{
-    func asDouble() -> Double {
+public extension Int{
+ public   func asDouble() -> Double {
         return Double(self)
     }
 
-    func asFloat() -> Float{
+ public   func asFloat() -> Float{
         return Float(self)
     }
 
-    func asString() -> String
+ public   func asString() -> String
     {
         return "\(self)"
     }
 
-    func asCGFloat() -> CGFloat
+ public   func asCGFloat() -> CGFloat
     {
 
         return CGFloat(self)
@@ -27,61 +27,61 @@ extension Int{
 
 }
 
-extension Float{
-    func asDouble() -> Double {
+public extension Float{
+ public   func asDouble() -> Double {
         return Double(self)
     }
 
-    func asInt() -> Int{
+ public   func asInt() -> Int{
         return Int(self)
     }
 
-    func asString() -> String
+ public   func asString() -> String
     {
         return "\(self)"
     }
 
-    func asCGFloat() -> CGFloat
+ public   func asCGFloat() -> CGFloat
     {
         return CGFloat(self)
     }
 }
 
-extension Double{
-    func asFloat() -> Float {
+public extension Double{
+ public   func asFloat() -> Float {
         return Float(self)
     }
 
-    func asInt() -> Int{
+ public   func asInt() -> Int{
         return Int(self)
     }
 
-    func asString() -> String
+ public   func asString() -> String
     {
         return "\(self)"
     }
 
-    func asCGFloat() -> CGFloat
+ public   func asCGFloat() -> CGFloat
     {
         return CGFloat(self)
     }
 }
 
-extension CGFloat{
-    func asFloat() -> Float {
+public extension CGFloat{
+ public   func asFloat() -> Float {
         return Float(self)
     }
 
-    func asInt() -> Int{
+ public   func asInt() -> Int{
         return Int(self)
     }
 
-    func asString() -> String
+ public   func asString() -> String
     {
         return "\(self)"
     }
 
-    func asDouble() -> Double
+ public   func asDouble() -> Double
     {
         return Double(self)
     }

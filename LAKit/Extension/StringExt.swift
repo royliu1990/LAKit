@@ -4,31 +4,31 @@
 //
 
 import Foundation
-extension String
+public extension String
 {
-    func asInt() -> Int
+ public   func asInt() -> Int
     {
         return Int(self)!
     }
 
-    func asDouble() -> Double
+ public   func asDouble() -> Double
     {
         return Double(self)!
     }
 
-    func asFloat() -> Float
+ public   func asFloat() -> Float
     {
         return Float(self)!
     }
 
-    func asUrl() -> URL
+ public   func asUrl() -> URL
     {
         return URL(string: self)!
     }
 
 
 
-    func isIncludeChinese() -> Bool {
+ public   func isIncludeChinese() -> Bool {
         for ch in self.unicodeScalars {
             // 中文字符范围：0x4e00 ~ 0x9fff
             if (0x4e00 < ch.value  && ch.value < 0x9fff) {
@@ -38,7 +38,7 @@ extension String
         return false
     }
 
-    func transformToPinyin() -> String {
+ public   func transformToPinyin() -> String {
         let stringRef = NSMutableString(string: self) as CFMutableString
         // 转换为带音标的拼音
         CFStringTransform(stringRef,nil, kCFStringTransformToLatin, false);
@@ -49,14 +49,14 @@ extension String
         return pinyin
     }
 
-    func transformToPinyinWithoutBlank() -> String {
+ public   func transformToPinyinWithoutBlank() -> String {
         var pinyin = self.transformToPinyin()
         // 去掉空格
         pinyin = pinyin.replacingOccurrences(of: " ", with: "")
         return pinyin
     }
 
-    func getPinyinHead() -> String {
+ public   func getPinyinHead() -> String {
         // 字符串转换为首字母大写
         let pinyin = self.transformToPinyin().capitalized
         var headPinyinStr = ""
@@ -71,7 +71,7 @@ extension String
     }
 
 
-    static func +(left:String,right:String) -> String
+public  static  func +(left:String,right:String) -> String
     {
         return left.appending(right)
     }

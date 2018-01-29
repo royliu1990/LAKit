@@ -6,92 +6,92 @@ import UIKit
 import SnapKit
 //protocol LALayout {
 //
-//    func leftAhead(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func leftAhead(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func leftAheadSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func leftAheadSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func rightBehind(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func rightBehind(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func rightBehindSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func rightBehindSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func aboveSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func aboveSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func below(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func below(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func belowSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func belowSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func centerXto(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func centerXto(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func centerXtoSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func centerXtoSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func centerYto(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func centerYto(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func centerYtoSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func centerYtoSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func leftTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func leftTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func leftToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func leftToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func rightTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func rightTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func rightToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func rightToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func topTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func topTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func topToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func topToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func bottomTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func bottomTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func bottomToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func bottomToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func widthTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func widthTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func widthToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func widthToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func heightTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func heightTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func heightToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func heightToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func sizeTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func sizeTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func sizeToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func sizeToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func centerTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func centerTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func centerToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func centerToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func edgesTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func edgesTo(view: UIView, offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func edgesToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func edgesToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func heightEqual(value: CGFloat) -> Self
+// public   func heightEqual(value: CGFloat) -> Self
 //
-//    func widthEqual(value: CGFloat) -> Self
+// public   func widthEqual(value: CGFloat) -> Self
 //
-//    func sizeEqual(value: CGFloat) -> Self
+// public   func sizeEqual(value: CGFloat) -> Self
 //
 //
 //    //UPDATE CONSTRAINTS
-//    func updateLeftToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func updateLeftToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func updateTopToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func updateTopToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func updateRightToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func updateRightToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func updateBottomToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
+// public   func updateBottomToSuperView(offset: CGFloat, multipliedBy: CGFloat) -> Self
 //
-//    func updateHeight(value: CGFloat) -> Self
+// public   func updateHeight(value: CGFloat) -> Self
 //
-//    func updateWidth(value:CGFloat) -> Self
+// public   func updateWidth(value:CGFloat) -> Self
 //
 //}
 
 
-extension UIView {
+public extension UIView {
 
 
 
-    private func preprocessInEasyLayout()
+ private func preprocessInEasyLayout()
     {
         if self.translatesAutoresizingMaskIntoConstraints
         {
@@ -100,7 +100,7 @@ extension UIView {
     }
 
     @discardableResult
-    func leftAhead(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func leftAhead(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -115,12 +115,12 @@ extension UIView {
         return self
     }
     @discardableResult
-    func leftAheadSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func leftAheadSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.leftAhead(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
 
     @discardableResult
-    func rightBehind(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func rightBehind(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -134,11 +134,11 @@ extension UIView {
         return self
     }
 
-    func rightBehindSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func rightBehindSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.rightBehind(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
 
-    func above(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func above(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -153,11 +153,11 @@ extension UIView {
     }
 
 
-    func aboveSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func aboveSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.above(view: self.superview!, offset: offset , multipliedBy: multipliedBy)
     }
     @discardableResult
-    func below(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func below(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -172,11 +172,11 @@ extension UIView {
     }
 
     @discardableResult
-    func belowSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func belowSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.below(view: self.superview!, offset: offset , multipliedBy: multipliedBy)
     }
     @discardableResult
-    func centerXto(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func centerXto(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -190,11 +190,11 @@ extension UIView {
         return self
     }
     @discardableResult
-    func centerXtoSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func centerXtoSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.centerXto(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
     @discardableResult
-    func centerYto(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func centerYto(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -209,11 +209,11 @@ extension UIView {
     }
 
     @discardableResult
-    func centerYtoSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func centerYtoSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.centerYto(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
     @discardableResult
-    func leftTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func leftTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
 
         self.preprocessInEasyLayout()
@@ -229,12 +229,12 @@ extension UIView {
     }
 
     @discardableResult
-    func leftToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func leftToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.leftTo(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
 
     @discardableResult
-    func rightTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func rightTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -249,11 +249,11 @@ extension UIView {
     }
 
     @discardableResult
-    func rightToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func rightToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.rightTo(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
     @discardableResult
-    func topTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func topTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -268,12 +268,12 @@ extension UIView {
     }
 
     @discardableResult
-    func topToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func topToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.topTo(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
 
     @discardableResult
-    func bottomTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func bottomTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -288,16 +288,16 @@ extension UIView {
     }
 
     @discardableResult
-    func bottomToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func bottomToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.bottomTo(view: self.superview!, offset: offset , multipliedBy: multipliedBy)
     }
 
-    func end() {
+ public   func end() {
 
     }
 
     @discardableResult
-    func widthTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func widthTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -311,11 +311,11 @@ extension UIView {
         return self
     }
     @discardableResult
-    func widthToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func widthToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.widthTo(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
     @discardableResult
-    func heightTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func heightTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -329,43 +329,43 @@ extension UIView {
         return self
     }
     @discardableResult
-    func heightToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func heightToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.heightTo(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
 
     @discardableResult
-    func sizeTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func sizeTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         return self.widthTo(view: view, offset: offset, multipliedBy: multipliedBy).heightTo(view: view, offset: offset, multipliedBy: multipliedBy)
     }
     @discardableResult
-    func sizeToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func sizeToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.sizeTo(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
 
     @discardableResult
-    func centerTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func centerTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         return self.centerXto(view: view, offset: offset, multipliedBy: multipliedBy).centerYto(view: view, offset: offset, multipliedBy: multipliedBy)
 
     }
     @discardableResult
-    func centerToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func centerToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.centerTo(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
     @discardableResult
-    func edgesTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func edgesTo(view: UIView, offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
 
         return self.centerTo(view: view).sizeTo(view: view, offset: offset, multipliedBy: multipliedBy)
 
     }
     @discardableResult
-    func edgesToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
+ public   func edgesToSuperView(offset: CGFloat = 0, multipliedBy: CGFloat = 1) -> Self {
         return self.edgesTo(view: self.superview!, offset: offset, multipliedBy: multipliedBy)
     }
 
     @discardableResult
-    func heightEqual(value: CGFloat) -> Self {
+ public   func heightEqual(value: CGFloat) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -380,7 +380,7 @@ extension UIView {
     }
 
     @discardableResult
-    func widthEqual(value: CGFloat) -> Self {
+ public   func widthEqual(value: CGFloat) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -395,7 +395,7 @@ extension UIView {
     }
 
     @discardableResult
-    func sizeEqual(value: CGFloat) -> Self {
+ public   func sizeEqual(value: CGFloat) -> Self {
 
         self.preprocessInEasyLayout()
 
@@ -409,7 +409,7 @@ extension UIView {
 
     //UPDATE CONSTRAINTS
     @discardableResult
-    func updateLeftToSuperView(offset: CGFloat, multipliedBy: CGFloat = 1.0) -> Self {
+ public   func updateLeftToSuperView(offset: CGFloat, multipliedBy: CGFloat = 1.0) -> Self {
         self.preprocessInEasyLayout()
 
         self.snp.updateConstraints {
@@ -423,7 +423,7 @@ extension UIView {
     }
 
     @discardableResult
-    func updateRightToSuperView(offset: CGFloat, multipliedBy: CGFloat = 1.0) -> Self {
+ public   func updateRightToSuperView(offset: CGFloat, multipliedBy: CGFloat = 1.0) -> Self {
         self.preprocessInEasyLayout()
 
         self.snp.updateConstraints {
@@ -437,7 +437,7 @@ extension UIView {
     }
 
     @discardableResult
-    func updateTopToSuperView(offset: CGFloat, multipliedBy: CGFloat = 1.0) -> Self {
+ public   func updateTopToSuperView(offset: CGFloat, multipliedBy: CGFloat = 1.0) -> Self {
         self.preprocessInEasyLayout()
 
         self.snp.updateConstraints {
@@ -451,7 +451,7 @@ extension UIView {
     }
 
     @discardableResult
-    func updateBottomToSuperView(offset: CGFloat, multipliedBy: CGFloat = 1.0) -> Self
+ public   func updateBottomToSuperView(offset: CGFloat, multipliedBy: CGFloat = 1.0) -> Self
     {
         self.preprocessInEasyLayout()
 
@@ -466,7 +466,7 @@ extension UIView {
     }
 
     @discardableResult
-    func updateHeight(value: CGFloat) -> Self {
+ public   func updateHeight(value: CGFloat) -> Self {
         self.preprocessInEasyLayout()
 
         self.snp.updateConstraints {
@@ -480,7 +480,7 @@ extension UIView {
     }
 
     @discardableResult
-    func updateWidth(value:CGFloat) -> Self
+ public   func updateWidth(value:CGFloat) -> Self
     {
         self.preprocessInEasyLayout()
 
@@ -496,7 +496,7 @@ extension UIView {
 
 
     @discardableResult
-    func updateSize(value:CGFloat) -> Self
+ public   func updateSize(value:CGFloat) -> Self
     {
         self.preprocessInEasyLayout()
 
@@ -511,7 +511,7 @@ extension UIView {
         return self
     }
 
-    //    func updateTop(view:UIView,offset: CGFloat, multipliedBy: CGFloat) -> Self
+    // public   func updateTop(view:UIView,offset: CGFloat, multipliedBy: CGFloat) -> Self
     //    {
     //        self.preprocessInEasyLayout()
     //
