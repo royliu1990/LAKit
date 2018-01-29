@@ -176,7 +176,7 @@ public extension UIView
         }
     }
 
-  public  var frameTuple:(Int,Int,Int,Int){
+   public  var frameTuple:(Int,Int,Int,Int){
         set{
             frame = CGRect(newValue)
         }
